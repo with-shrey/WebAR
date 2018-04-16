@@ -4,12 +4,19 @@
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with hiro preset -->
     <a-marker preset='hiro'>
-      <a-box position='0 0.5 0' material='color: green;'></a-box>
     </a-marker>
 
     <!-- handle barcode marker -->
     <a-marker preset='custom' type='pattern' patternUrl='pattern-marker.patt'>
-      <a-box position='0 0.5 0' material='color: blue;'></a-box>
+  <!--  <a-entity
+        position="-2 0 0"
+        geometry="primitive: plane; width: 2; height: 5"
+        material="color: #0000FF"
+        text="color: white; align: center; font: dejavu;
+              value: a-text align='center' (anchor='align') DejaVu width 2 123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890"
+      ></a-entity> -->
+          <a-box position="-2 0 0"  material='color: red;'></a-box>
+          <a-box position="2 0 0"  material='color: blue;'></a-box>
     </a-marker>
 
     <!-- add a simple camera -->
